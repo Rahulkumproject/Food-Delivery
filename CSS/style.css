@@ -194,6 +194,18 @@ align-items:center;
 #contact-box label{
     font-size: 1.3rem;
 }
+.cont{
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+}
+.btn1{
+background: antiquewhite;
+    width: 100px;
+    border: 2px solid black;
+    border-radius: 18px;
+    height: 21px;
+}
 
 
 
