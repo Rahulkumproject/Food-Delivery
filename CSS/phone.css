@@ -25,11 +25,13 @@ height: 400px;
 #services{
   flex-direction: column;  
 }
-#services .box{
 
-}
 #clients{
     flex-wrap: wrap;
+}
+#client-section::before{
+  background-image: linear-gradient(to right,blue,yellow);
+    height: 1176px;
 }
 #clients img{
     width:66px;
