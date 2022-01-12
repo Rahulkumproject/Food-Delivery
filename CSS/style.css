@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --navbar-height: 59px;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* Navigation bar; */
+#navbar{
+    display:flex;
+    align-items: center;
+    position: relative;
+    top:0px;
+}
+#logo{
+  margin: 3px 3px;
+}
+#logo img{
+    height: 61px;
+    margin: 12px 17px;
+}
+#navbar ul{
+    display:flex;
+font-family: 'Raleway', sans-serif;
+
+}
+#navbar::before{
+    content:"";
+    background-color:rgb(7, 6, 6);
+    position:absolute;
+    top:0px;
+    left:0px;
+    height:100%;
+    width:100%;
+    z-index: -1;
+    opacity:.7;
+}
+#navbar ul li{
+    list-style:none;
+    font-size:1.1rem;
+}
+#navbar ul li a{
+    color:white;
+    display:block;
+    padding:3px 22px;
+    border-radius: 20px;
+    text-decoration:none;
+}
+#navbar ul li a:hover{
+    color:black;
+    background-color:white;
+
+}
+/* main page and background; */
+#home{
+    display:flex;
+    flex-direction: column;
+    height: 508px;
+    padding:3px 200px;
+    justify-content:center;
+    align-items: center;
+}
+
+#home::before{
+    content:"";
+    background:url('../food6.jpg') no-repeat center center/cover;
+    position:absolute;
+    top:0px;
+    left:0px;
+    height:100%;
+    width:100%;
+    z-index: -1;
+    opacity:1.0 ;
+}
+#home h1{
+    color:white;
+    text-align:center;
+    font-family: 'Baloo 2', cursive;
+    text-shadow: 3px 3px blue;
+
+}
+#home p{
+    color:white;
+    text-align:center;
+    font-size:1.6rem;
+    text-shadow: 2px 2px black;
+}
+.h-primary{
+    font-family: 'Raleway', sans-serif;
+    font-size: 3.5rem;
+    padding:12px;
+}
+.h-secondary{
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.3rem;
+    padding:12px;
+    text-align: center;
+}
+.btn{
+    padding:6px 20px;
+    border:2px solid white;
+    background-color: brown;
+    color:white;
+    margin:17px 20px;
+    border-radius: 22px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+/* sections; */
+.centre{
+    text-align: center;
+}
+#services{
+    margin:30px;
+    display:flex;
+}
+#services .box{
+border: 2px solid brown;
+margin:9px 3px;
+border-radius: 20px;
+/* padding: 12px; */
+}
+#services .box img{
+height: 160px;
+display: block;
+margin:auto;
+}
+#services .box p{
+    font-family: 'Raleway', sans-serif;
+}
+/* Client section; */
+
+/* #client-section{
+    position: relative;
+} */
+
+#client-section::before{
+    content: "";
+    position:absolute;
+    background-image: url('../food2.jpg') ;
+    height: 57%;
+    width:100%;
+    z-index: -1;
+     opacity:0.8;
+}
+
+#clients{
+display:flex;
+justify-content:center;
+align-items:center;
+}
+#clients img{
+    height: 110px;
+}
+.client-items{
+    padding: 34px;
+}
+
+/* Contact section; */
+#contact{
+    position: relative;
+    height:300px;
+}
+#contact::before{
+    content: "";
+    background-image:url('../contact-us-banner.jpeg');
+    position:absolute;
+    width:100%;
+    height:100%;
+    z-index: -1;
+    opacity:1.0;
+
+}
+#contact-box{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding-bottom: 34px;
+}
+
+#contact-box input{
+    width:100%;
+    padding:0.3rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+
+}
+#contact-box form{
+    width:40%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+}
+
+
+
+footer{
+    background-color:black;
+    color:white;
+    padding:5px 20px;
+}
+
+
